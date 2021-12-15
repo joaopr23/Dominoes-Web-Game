@@ -1,0 +1,180 @@
+body {
+  background-image: url(sea.jpeg);
+}
+
+#start{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  float: right;
+}
+
+#botoesJogo{
+  font-size: 1%;}
+
+#P1{
+  float: left;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+
+}
+#P2{
+  float: right;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+}
+
+#nomeUtilizador{
+  text-align: left;
+}
+
+#logout{
+  float: right;
+  display: none;
+}
+
+#loading {
+  display: none;
+  vertical-align:text-top;
+}
+
+#autent{
+  text-align: left;
+}
+
+#gameIdTitle{
+  display: none;
+}
+
+#cab {
+  float: left;
+}
+
+#yourTurn{
+  display:none;
+  font-size:20px;
+  color:black;
+  float:left
+}
+
+#botoesJogo{
+  display: none;
+  float: left;
+}
+
+#areaJogo{
+width: 1000px; height: 700px;
+float:left;
+color: rgb(255, 255, 255);
+border-width: 2mm;
+border-style: solid;
+border-color: black;
+padding: 5mm;
+font-size: 250%;
+margin-top: 2mm;
+}
+
+#jogo{
+  display: inline-flex;
+  font-size: 150%;
+}
+#nome{
+    width:100px;
+}
+#password{
+  width:100px;
+}
+
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.scrollmenu {
+  display:inline-flex;
+
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu p {
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu p:hover {
+  background-color: #777;
+}
+
+.open-button {
+  background-color: lightseagreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 3000px;
+  padding: 10px;
+  background-color: rgb(24, 125, 138);
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Dominó</title>
+    <link rel="stylesheet" href="1.css" type="text/css">
+    <link rel="shortcut icon" href="domino.webp">
+
+
+<script src="2.js"></script>
+
+</head>
+<body>
+
+
+
+<img id="cab" src="domino.webp" alt="Peças de Dominó" height="42" width="42">
+  <h1>Dominó</h1>
+
+
+
+  <div id="start">
+    <div id="nomeUtilizador">Autenticação:</div>
+    <input id ="logout" onclick="logout()" type=button value="Terminar sessão">
+
+    <div id="apaga">
+      <input id="nome" type=text>
+      <input id="password" type=password >
+
+    <input type=button value="OK" onclick="logIn()">
+    </div>
+
+
+
+<div>
+
+</div>
+
+
+
+
+<br>
+<hr>
+
+  <button id="botaoOnline" onclick="joinGame()" >Iniciar jogo Online</button>
+  <button id="darpecas" onclick="darPecas()" >Iniciar jogo Offline</button>
+  <br><br>
+
+  <div id="loading" >
+    À procura de Jogadores
+    <img src="loading4.gif" alt="loading" height="50" width="50">
+  </div>
+
+
+<div id = "IdOn">
+<h4 id="gameIdTitle" >Game ID:</h4>
+<p id="gameId"></p>
+</div>
+<table>
+  <caption>Classificações</caption>
+ <tr>
+  <th>Nome</th>
+  <th>Vitórias</th>
+  <th>Nr Jogos</th>
+ </tr>
+ <tr>
+  <td id="names"></td>
+  <td id="v1"></td>
+  <td id="nr"></td>
+ </tr>
+
+</table>
+<div>
+  <button class="open-button" onclick="openForm()">Instruções</button>
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h2>Instruções</h2>
+      <h3>Iniciar o jogo</h3>
+      <p>Para iniciar o jogo, clique no botão 'Dar Peças', a primeira jogada é atribuida ao jogador com a peça mais alta.</p>
+      <h3>Jogabilidade</h3>
+      <p>Para jogar uma Peça, clique sobre ela, o seu adversário jogará automaticamente assim que fizer a sua jogada.</p>
+      <p>Quando tentar jogar uma peça que não é válida, ser-lhe-á mostrado um aviso.</p>
+      <p>Se nenhuma das suas peças for válida, terá de retirar peças do monte, clicando no botão 'Monte'.</p>
+      <p>Pode escolher passar a jogada ao seu adversário, clicando no botão 'Passar jogada'.</p>
+      <p>Pode ainda desistir do jogo, clicando em 'Desistir'.</p>
+    <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+    </form>
+  </div>
+  </div>
+
+
+
+
+</div>
+
+  <!-- <input type=button value="Abandonar Partida" onclick="leaveGame()"> -->
+
+<div id="areaJogo">
+
+  <div id ="yourTurn" >
+    É a sua vez de jogar.
+  </div>
+
+  <div id="botoesJogo"  >
+      <button onclick="IrAoMonte()">Buscar Ao Monte</button>
+      <button onclick="passarVez()">Passar Jogada</button>
+      <button onclick="ProcedimentosFim(0)">Desistir</button>
+  </div>
+<br>
+  <div id="P1">  </div>
+  <div id="P2">  </div>
+    <br><br><br>
+  <div class="scrollmenu" id="jogo">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+</body></html>
